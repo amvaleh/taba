@@ -18,5 +18,12 @@ class DashboardController < ApplicationController
   def HSEpolicy
   end
 
+  def tcp
+  end
+
+
+  def perforation
+  end
+  
   
 end
