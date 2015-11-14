@@ -394,14 +394,14 @@ h1.grve-logo img {
 
 .grve-header-light .grve-horizontal-menu ul li ul .menu-item-has-children > a,
 .grve-header-light .grve-horizontal-menu ul li ul .page_item_has_children > a {
-	background-image: asset-url('arrow-right-dark.svg')
+	background-image: asset-url('arrow-right-dark.svg');
 	background-position: 95% center;
 	background-repeat: no-repeat;
 }
 
 .grve-header-dark .grve-horizontal-menu ul li ul .menu-item-has-children > a,
 .grve-header-dark .grve-horizontal-menu ul li ul .page_item_has_children > a {
-	background-image: asset-url('arrow-right-dark.svg')
+	background-image: asset-url('arrow-right-dark.svg');
 	background-position: 95% center;
 	background-repeat: no-repeat;
 }
