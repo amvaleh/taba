@@ -24,6 +24,13 @@ class DashboardController < ApplicationController
 
   def perforation
   end
+
+  def contact
+  end
+
+  def contact_success
+  end
+  
   
   
 end

@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'dashboard/HSEpolicy'
   get 'dashboard/tcp'
   get 'dashboard/perforation'
+  get 'dashboard/contact'
+  get 'dashboard/contact_success'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

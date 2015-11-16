@@ -1,0 +1,87 @@
+
+<div id="page-116" class="post-116 page type-page status-publish hentry grve-main-content">
+
+        <section class="grve-section grve-feature-header" style="padding: 30px 128px; margin-bottom: 30px; margin-left: -128px; margin-right: -128px; background-color: rgb(240, 88, 72);">  <div class="grve-row">
+    <div class="wpb_column grve-column-1">
+      <h2 class="grve-element grve-align-center grve-title-no-line light-title-bges" style="">Contact TAHA</h2>
+    </div>
+    </div>
+    </section>
+
+    <p>
+      You can contact us by sending email to info@tahapouyesh.com or fill out the form here, we'll be in touch. 
+    </p>
+
+
+    <div class="wpb_column grve-column-1-3">
+
+
+      <!-- <h2 class="grve-element grve-align-center grve-title-no-line light-title-bges" style="">Contact TAHA</h2> -->
+
+
+<%= form_for @contact, :url => contacts_path, :html => {:class => 'formtastic'} do |f| %>
+  <% if ContactUs.require_name %>
+    <div class='string required' id='contact_us_contact_name_input'>
+      <p>
+      <%= f.label :name, (t('.name') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+    <br>
+
+      <%= f.text_field :name %>
+      <% if f.object.errors[:name].present? %>
+        <p class='inline-error'><%= f.object.errors[:name].join(' and ') %></p>
+      <% end %>
+      </p>
+    </div>
+  <% end %>
+  <div class='string required' id='contact_us_contact_email_input'>
+      <p>
+
+    <%= f.label :email, (t('.email') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+    <br>
+    <%= f.text_field :email %>
+    <% if f.object.errors[:email].present? %>
+      <p class='inline-error'><%= f.object.errors[:email].join(' and ') %></p>
+    <% end %>
+    </p>
+  </div>
+  <% if ContactUs.require_subject %>
+    <div class='string required' id='contact_us_contact_subject_input'>
+      <p>
+
+      <%= f.label :subject, (t('.subject') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+    <br>
+
+      <%= f.text_field :subject %>
+      <% if f.object.errors[:subject].present? %>
+        <p class='inline-error'><%= f.object.errors[:subject].join(' and ') %></p>
+      <% end %>
+      </p>
+    </div>
+  <% end %>
+  <div class='text required' id='contact_us_contact_message_input'>
+      <p>
+
+    <%= f.label :message, (t('.message') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+    <br>
+
+    <%= f.text_area :message , :class=>"bger" %>
+    <% if f.object.errors[:message].present? %>
+      <p class='inline-error'><%= f.object.errors[:message].join(' and ') %></p>
+    <% end %>
+    </p>
+  </div>
+  <div class='commit'>
+    <%= f.submit :submit, :class => 'submit create', :title => t('.submit') %>
+  </div>
+<% end %>
+
+    </div>
+
+    <div class="wpb_column grve-column-2-3">
+    <%= image_tag "contact_us.jpg" , width: "80%" %>
+
+    </div>
+
+
+
+</div>
