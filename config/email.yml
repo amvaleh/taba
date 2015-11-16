@@ -1,0 +1,14 @@
+development:
+  :address: smtp.zoho.com
+  :port: 587
+  :authentication: plain
+  :user_name: info@tahapouyesh.com
+  :password: tahapouyesh_info
+  :enable_starttls_auto: true
+production:
+  :address: smtp.zoho.com
+  :port: 587
+  :authentication: plain
+  :user_name: info@tahapouyesh.com
+  :password: tahapouyesh_info
+  :enable_starttls_auto: true
