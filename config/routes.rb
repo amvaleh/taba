@@ -3,12 +3,17 @@ Rails.application.routes.draw do
 
   get 'dashboard/home'
   get 'dashboard/about'
+  get 'dashboard/our_company'
   get 'dashboard/philosophy'
   get 'dashboard/HSEpolicy'
   get 'dashboard/tcp'
   get 'dashboard/perforation'
   get 'dashboard/contact'
   get 'dashboard/contact_success'
+  get 'dashboard/downhole'
+  get 'dashboard/coiled_tubing'
+  get 'dashboard/e_coil'
+  get 'dashboard/wireline_services'
 
 
 

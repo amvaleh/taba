@@ -3,7 +3,7 @@
       <div class="grve-container">
         <h1 class="grve-logo" style="">
           <a href="/">
-          <%= image_tag "logo.jpg" %>
+          <%= image_tag "logo1.jpg" %>
           </a>
         </h1>
 
@@ -32,9 +32,22 @@
               <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="#">Hydrogeology Study / Analysis</a></li>
             </ul>
           </li>
-            
             <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><div class="grve-mainmenu-btn"></div>
-                <%= link_to "Perforating" , dashboard_perforation_path %>
+                <%= link_to "Downhole video imaging" , dashboard_downhole_path %>
+            </li>
+
+            <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><div class="grve-mainmenu-btn"></div>
+              <%= link_to "Coiled tubing" , dashboard_coiled_tubing_path %>
+
+              <ul class="sub-menu">
+                <li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-394"><div class="grve-mainmenu-btn"></div>
+                  <%= link_to "E-coil" , dashboard_e_coil_path %>
+                </li>
+              </ul>
+            </li>
+
+            <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><div class="grve-mainmenu-btn"></div>
+                <%= link_to "Perforation" , dashboard_perforation_path %>
 
               <ul class="sub-menu">
                 <li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-394"><div class="grve-mainmenu-btn"></div>
@@ -43,7 +56,9 @@
               </ul>
             </li>
 
-            <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><div class="grve-mainmenu-btn"></div><a href="#">Wireline Services</a>
+            <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137">
+              <div class="grve-mainmenu-btn"></div>
+              <%= link_to "Wireline Services" , dashboard_wireline_services_path %>
               <ul class="sub-menu">
                 <li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-394"><div class="grve-mainmenu-btn"></div>
                 <a href="#">Open Hole Logging</a>
@@ -56,10 +71,10 @@
             <li id="menu-item-505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="#">Well Testing</a></li>
             <li id="menu-item-320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-320 grve-menu-item-right">
               <div class="grve-mainmenu-btn"></div>
-              <%= link_to "aboutTAHA" , dashboard_about_path %>
+              <%= link_to "about TAHA" , dashboard_about_path %>
               <ul class="sub-menu">
                 <li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331">
-              <%= link_to "Our Company" , dashboard_about_path %>
+              <%= link_to "Our Company" , dashboard_our_company_path%>
                 </li>
 
                 <li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
@@ -67,10 +82,7 @@
                 </li>
                 <li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790">
                 <a href="#">News</a></li>
-                
-                <li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319">
-                <a href="#">Key People</a>
-                </li>
+
                 <li id="menu-item-339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-339">
                   <div class="grve-mainmenu-btn"></div>
               <%= link_to "HSE policy" , dashboard_HSEpolicy_path %>                

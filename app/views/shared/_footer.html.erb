@@ -6,29 +6,31 @@
 
         <div class="grve-column-1-2">
           <div class="grve-copyright">
-            Copyright 2014 - All Rights Reserved.
+            Copyright 2015 - All Rights Reserved.
 
-                <span style="margin-left: 10px;"><a href="#" target="_blank">
-                  <!--<img class="alignnone size-full wp-image-737" src="./TAHA – Big Guns Energy Services Inc._files/linkedin-icon_transparent.png" alt="linkedin-icon_transparent" width="36" height="36">-->
-                  <%= image_tag "linkedin-icon_transparent.png" , :class => "alignnone size-full wp-image-737" %>
-                </a> <a href="#" target="_blank">
-                  <!--<img class="alignnone size-full wp-image-738" src="./TAHA – Big Guns Energy Services Inc._files/TwitterIcon.png" alt="TwitterIcon" width="36" height="36">-->
-                  <%= image_tag "TwitterIcon.png" , :class => "alignnone size-full wp-image-738" %>
-                </a></span>					</div>
+          </div>
         </div>
         <div class="grve-column-1-2">
           <div class="grve-second-menu">
             <ul id="menu-main-menu-1" class="menu">
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-165">
-                <div class="grve-mainmenu-btn"></div><a href="#">GeoContainment</a></li>
+                <div class="grve-mainmenu-btn"></div>
+                <%= link_to "Perforation" , dashboard_perforation_path %>
+              </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137">
                 <div class="grve-mainmenu-btn"></div>
-                <a href="#">Integrated Wireline Services</a></li>
+                <%= link_to "Wireline Services" , "#" %>
+              </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505">
-                <a href="#">Project Management</a></li>
+                <%= link_to "Coiled Tubing" , dashboard_coiled_tubing_path %>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505">
+                <%= link_to "E-Coiled Tubing" , dashboard_e_coil_path %>
+              </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-320">
                 <div class="grve-mainmenu-btn"></div>
-                <a href="#">About TAHA</a></li>
+                <%= link_to "about TAHA" , dashboard_about_path %>
+              </li>
               <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130">
                 <a href="#">Contact TAHA</a></li> -->
             </ul>

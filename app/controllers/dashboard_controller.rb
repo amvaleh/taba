@@ -9,7 +9,14 @@ class DashboardController < ApplicationController
   def about
   end
 
+  def our_company
 
+  end
+
+
+  def wireline_services
+    
+  end
 
   def philosophy
   end
@@ -31,6 +38,17 @@ class DashboardController < ApplicationController
   def contact_success
   end
   
+
+  def downhole
+  end
+
+  def coiled_tubing
+
+  end
+
+  def e_coil
+
+  end
   
   
 end
