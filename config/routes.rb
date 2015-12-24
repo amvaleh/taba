@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'dashboard/coiled_tubing'
   get 'dashboard/e_coil'
   get 'dashboard/wireline_services'
+  get 'dashboard/lwd_mwd'
+  get 'dashboard/news'
 
 
 

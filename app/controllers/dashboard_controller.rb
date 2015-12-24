@@ -6,6 +6,13 @@ class DashboardController < ApplicationController
   end
 
 
+  def news
+  end
+  
+
+  def lwd_mwd
+  end
+
   def about
   end
 
